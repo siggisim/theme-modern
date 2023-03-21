@@ -27,7 +27,7 @@ if __name__ == "__main__":
         line = line.replace("build interrupted", "build interrupted 😡")
         line = line.replace(defaultGreen+"[", brightGreenBold+"[")
 
-        m = re.search(r"^([\s]*)\s\s([^\s]*)(\s?.*)(; )([0-9+])s(.*)$", line)
+        m = re.search(r"^([\s]*)\s\s([^\s]*)(\s?.*)(; )([0-9]+)s(.*)$", line)
         if m:
             numColor = grey
             if int(m.group(5)) >= 5:
